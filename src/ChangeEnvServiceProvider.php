@@ -1,13 +1,13 @@
 <?php
 
-namespace XiaoyJayUs\Console;
+namespace XiaoyJayUs\ChangeEnv\Laravel;
 
 
-use XiaoyJayUs\Console\ChangeEnv;
+use XiaoyJayUs\ChangeEnv\Laravel\Console\ChangeEnv;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
-class ChangeEnvServiceProvider extends ServiceProvider implements DeferrableProvider
+class ChangeEnvServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application events.

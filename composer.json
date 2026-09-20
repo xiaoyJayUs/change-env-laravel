@@ -2,7 +2,7 @@
   "name": "xiaoyjayus/change-env-laravel",
   "autoload": {
     "psr-4": {
-      "XiaoyJayUs\\": "src/"
+      "XiaoyJayUs\\ChangeEnv\\Laravel\\": "src/"
     }
   },
   "license": "Apache-2.0",
@@ -22,7 +22,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "XiaoyJayUs\\Console\\ChangeEnvServiceProvider"
+        "XiaoyJayUs\\ChangeEnv\\Laravel\\ChangeEnvServiceProvider"
       ]
     }
   }

@@ -1,6 +1,6 @@
 <?php
 
-namespace XiaoyJayUs\Console;
+namespace XiaoyJayUs\ChangeEnv\Laravel\Console;
 
 
 use Illuminate\Console\Command;
