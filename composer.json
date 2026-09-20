@@ -1,0 +1,29 @@
+{
+  "name": "xiaoyjayus/change-env-laravel",
+  "autoload": {
+    "psr-4": {
+      "XiaoyJayUs\\": "src/"
+    }
+  },
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "xiaoyJayUs",
+      "email": "xiaoy.jay.us@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "ext-json": "*",
+    "illuminate/console": "^6 || ^7 || ^8",
+    "illuminate/filesystem": "^6 || ^7 || ^8",
+    "illuminate/support": "^6 || ^7 || ^8"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "XiaoyJayUs\\Console\\ChangeEnvServiceProvider"
+      ]
+    }
+  }
+}
