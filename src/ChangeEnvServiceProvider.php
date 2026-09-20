@@ -15,7 +15,7 @@ class ChangeEnvServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__ . '/src/config.php';
+        $configPath = __DIR__ . '/config.php';
         $publishPath = config_path('change-env.php');
         $this->publishes([$configPath => $publishPath], 'config');
     }
@@ -27,7 +27,7 @@ class ChangeEnvServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $configPath = __DIR__ . '/src/config.php';
+        $configPath = __DIR__ . '/config.php';
         $this->mergeConfigFrom($configPath, 'change-env');
 
         $this->app->singleton(
