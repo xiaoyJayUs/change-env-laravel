@@ -22,13 +22,14 @@ class ChangeEnvServiceProvider extends ServiceProvider
 
     /**
      * Register the service provider.
-     *
      * @return void
      */
     public function register()
     {
-        //$configPath = __DIR__ . '/config.php';
-        //$this->mergeConfigFrom($configPath, 'change-env');
+        if(!$this->app['config']->has('change-env')){
+            $configPath = __DIR__ . '/config.php';
+            $this->mergeConfigFrom($configPath, 'change-env');
+        }
 
         $this->app->singleton(
             'command.xy.change-env',
